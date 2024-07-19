@@ -1,7 +1,15 @@
-
+:root{
+    --main-color:#0dc7f0;
+}
 
 
 .logo{
     width: 50px;
 }
 
+.font{
+    font-family: "Montserrat", sans-serif;
+}
+.card-img-top{
+    object-fit: cover;
+}
