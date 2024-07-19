@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-CL">
 
 <head>
@@ -21,64 +21,68 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
 
 
-    <title>Prueba</title>
+    <title>Prueba Viajes Chile | Home</title>
 </head>
 
-<body">
-    <!--inicio nav-->
-    <nav class="navbar navbar-expand-lg bg-transparent sticky-top" data-bs-theme="dark">
-        <div class="container">
-            <a class="navbar-brand text-dark d-flex " href="index.html">
-                <img class="logo" src="assets/img/viajes.svg" alt="logo">
-                <h3 class="my-2">Viajes Chile</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fs-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#quienessomos">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#destacados">Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--fin nav-->
+<body onload="mostrarFechaActualizable();">
     <!--inicio main-->
     <main>
-        <!--inicio carrousel-->
-        <section>
 
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel"> <!-- bata-bs-ride hace que el carrousel sea automatico-->
+        <!--inicio nav-->
+
+        <nav class="navbar barra navbar-expand-lg sticky-top" data-bs-theme="black">
+            <div class="container">
+                <a class="navbar-brand d-flex" href="index.html">
+                    <img class="logo" src="assets/img/viajes.svg" alt="logo">
+                    <h3 class="my-2">Viajes Chile</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#quienessomos">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#destacados">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--fin nav-->
+
+
+        <!--inicio carrousel-->
+
+
+        <section>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- bata-bs-ride hace que el carrousel sea automatico-->
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="3500">
                         <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="llamas">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item active" data-bs-interval="3500">
                         <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="rapanui">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item active" data-bs-interval="3500">
                         <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="pinguino">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -87,32 +91,51 @@
         <!--fin carrousel-->
         <!--inicio quienes somos-->
         <section class="container mt-4">
-            <h2 class="text-center">QUIÉNES SOMOS</h2>
-            <hr>
+            <h2 class="text-center py-4">¿QUIÉNES SOMOS?</h2>
             <div class="row">
+                <div class="col-12 col-md-4 parrafos">
+                    <a class="nav-link text-light bg-dark text-center" href="http://www.github.com/" target="_blank">
+                        <i class="fa-solid fa-plane"></i>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatum doloribus
+                        accusantium, magnam porro reiciendis quia assumenda nesciunt excepturi similique necessitatibus
+                        dicta voluptatem hic, recusandae et inventore! Laborum, qui quasi! Aut exercitationem ea dolorem
+                        ratione iusto voluptatum, eum, nulla qui amet nemo beatae! Modi, ullam recusandae. Ut mollitia
+                        deserunt tenetur voluptatum adipisci laboriosam deleniti explicabo eaque nobis, consectetur
+                        reprehenderit quaerat? Eveniet a possimus labore. Illum iure maxime soluta doloribus ut quas
+                        molestiae. Placeat officia provident eligendi non ex. Harum, ipsa?</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatum doloribus
+                        accusantium, magnam porro reiciendis quia assumenda nesciunt excepturi similique necessitatibus
+                        dicta voluptatem hic, recusandae et inventore! Laborum, qui quasi! Aut exercitationem ea dolorem
+                        ratione iusto voluptatum, eum, nulla qui amet nemo beatae! Modi, ullam recusandae. Ut mollitia
+                        deserunt tenetur voluptatum adipisci laboriosam deleniti explicabo eaque nobis, consectetur
+                        reprehenderit quaerat? Eveniet a possimus labore. Illum iure maxime soluta doloribus ut quas
+                        molestiae. Placeat officia provident eligendi non ex. Harum, ipsa?</p>
+                    <a class="nav-link text-light bg-dark text-center" href="http://www.github.com/" target="_blank">
+                        <i class="fa-solid fa-plane"></i>
+                    </a>
+                </div>
                 <div class="col-12 col-md-4">
                     <a class="nav-link text-light bg-dark text-center" href="http://www.github.com/" target="_blank">
                         <i class="fa-solid fa-plane"></i>
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatum doloribus accusantium, magnam porro reiciendis quia assumenda nesciunt excepturi similique necessitatibus dicta voluptatem hic, recusandae et inventore! Laborum, qui quasi! Aut exercitationem ea dolorem ratione iusto voluptatum, eum, nulla qui amet nemo beatae! Modi, ullam recusandae. Ut mollitia deserunt tenetur voluptatum adipisci laboriosam deleniti explicabo eaque nobis, consectetur reprehenderit quaerat? Eveniet a possimus labore. Illum iure maxime soluta doloribus ut quas molestiae. Placeat officia provident eligendi non ex. Harum, ipsa?</p>
-                </div>
-                <div class="col12 col-md-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatum doloribus accusantium, magnam porro reiciendis quia assumenda nesciunt excepturi similique necessitatibus dicta voluptatem hic, recusandae et inventore! Laborum, qui quasi! Aut exercitationem ea dolorem ratione iusto voluptatum, eum, nulla qui amet nemo beatae! Modi, ullam recusandae. Ut mollitia deserunt tenetur voluptatum adipisci laboriosam deleniti explicabo eaque nobis, consectetur reprehenderit quaerat? Eveniet a possimus labore. Illum iure maxime soluta doloribus ut quas molestiae. Placeat officia provident eligendi non ex. Harum, ipsa?</p>
-                </div>
-                <div class="col12 col-md-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatum doloribus accusantium, magnam porro reiciendis quia assumenda nesciunt excepturi similique necessitatibus dicta voluptatem hic, recusandae et inventore! Laborum, qui quasi! Aut exercitationem ea dolorem ratione iusto voluptatum, eum, nulla qui amet nemo beatae! Modi, ullam recusandae. Ut mollitia deserunt tenetur voluptatum adipisci laboriosam deleniti explicabo eaque nobis, consectetur reprehenderit quaerat? Eveniet a possimus labore. Illum iure maxime soluta doloribus ut quas molestiae. Placeat officia provident eligendi non ex. Harum, ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatum doloribus
+                        accusantium, magnam porro reiciendis quia assumenda nesciunt excepturi similique necessitatibus
+                        dicta voluptatem hic, recusandae et inventore! Laborum, qui quasi! Aut exercitationem ea dolorem
+                        ratione iusto voluptatum, eum, nulla qui amet nemo beatae! Modi, ullam recusandae. Ut mollitia
+                        deserunt tenetur voluptatum adipisci laboriosam deleniti explicabo eaque nobis, consectetur
+                        reprehenderit quaerat? Eveniet a possimus labore. Illum iure maxime soluta doloribus ut quas
+                        molestiae. Placeat officia provident eligendi non ex. Harum, ipsa?</p>
                 </div>
 
             </div>
-           
-
-           
 
         </section>
         <!--fin quienes somos-->
         <section></section>
         <section></section>
-
 
     </main>
     <!--fin main-->
@@ -120,7 +143,7 @@
     <footer class="container-fluid bg-dark pt-4 mt-2">
         <div class="row text-light">
             <div class="col-12 col-md-6 mb-4 text-center">
-                <h4 >VIAJES CHILE</h4>
+                <h4>VIAJES CHILE</h4>
             </div>
 
             <div class="col-12 col-md-6 mb-4 ">
